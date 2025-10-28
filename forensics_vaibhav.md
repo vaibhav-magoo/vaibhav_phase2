@@ -68,4 +68,41 @@ picoCTF{qu1t3_a_v13w_2020}
 
 ***
 
+# 2. Trivial Flag Transfer Protocol
+
+> Figure out how they moved the flag.
+
+## Solution:
+
+- downlaoded the file and opened with wireshark
+- there were tftp protocols 
+- filtered the tftp packets
+- and then exported all of them
+  <img width="993" height="981" alt="image" src="https://github.com/user-attachments/assets/afccb054-f437-405a-b79d-b74273e4e42e" />
+- examined the instructions.txt file
+- figured out it was a ROT13 cipher
+  <img width="907" height="902" alt="image" src="https://github.com/user-attachments/assets/b3a7b732-3c21-4da0-a628-f8831eb6a619" />
+- there was more rot13 in the plan file
+- decoding this gave: I USED THE PROGRAM AND HID IT WITH-DUEDILIGENCE. CHECKOUT THE PHOTOS
+- figured out the file was for steghide
+- after some trial and error got the flag.txt file using steghide and the password was steghide
+- got the flag
+
+
+
+
+## Flag:
+
+```
+picoCTF{h1dd3n_1n_pLa1n_51GHT_18375919}
+```
+
+## Concepts learnt:
+
+- filtering specific protocols in wireshark
+- solving ROT13 ciphers
+
+***
+
+
 
