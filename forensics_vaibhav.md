@@ -63,8 +63,9 @@ picoCTF{qu1t3_a_v13w_2020}
 
 ## Resources:
 
-- found this video explaining the bmp file structure. [youtube video]([https://google.com](https://www.youtube.com/watch?v=13E0il2zxBA&list=WL&index=1))
+- found this video explaining the bmp file structure. [youtube video](https://www.youtube.com/watch?v=13E0il2zxBA&list=WL&index=1)
 
 
 ***
+
 
